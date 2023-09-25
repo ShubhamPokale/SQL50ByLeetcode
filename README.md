@@ -79,3 +79,11 @@ After a little brainstroming and a hint I got the solution :
 
 select p.project_id , round(avg(e.experience_years ),2) as average_years from Project p inner join Employee e  on p.employee_id=e.employee_id group by project_id;
 
+
+## SQL solve ho rahe hai. But It feels like I've missed a step or two and directly jumoped to the next level. 
+So I'll go through some easy practice questions and some concepts that I think I need to grasp more solidly. 
+------------------------------------
+SQL Most asked practice questions 
+-------------------------------------
+
+___________________________________________________________________________________________
