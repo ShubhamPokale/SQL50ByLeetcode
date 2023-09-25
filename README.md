@@ -15,3 +15,8 @@ Using as while assigning aliases increases performance
 #Easy but worth it 
 
 select customer_id , count(customer_id) as count_no_trans from visits where ( visit_id not in(select visit_id from Transactions))group by customer_id ;
+Solved 11 SQL Problems from SQL50. But forogt to commit the log and lost everything. 
+
+Log : 25th September Monday, 
+
+
