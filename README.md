@@ -27,4 +27,9 @@ This one is valid too, but does not group by the records and has multiple entrie
 
 select course_modules.moduleID, modules.name from course_modules inner join modules where course_modules.moduleID=modules.ID;
 
+Assignment 009 (Joins)
+
+Display studentID who have more than 2 phone numbers.
+select studentID, count(studentID) from student_qualifications group by studentID;
+
 
