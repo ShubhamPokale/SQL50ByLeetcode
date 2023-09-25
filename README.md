@@ -19,4 +19,12 @@ Solved 11 SQL Problems from SQL50. But forogt to commit the log and lost everyth
 
 Log : 25th September Monday, 
 
+Database gorup019 : Assignment (009 joins)
+Display module names for “PG-DAC” course.
+Solution : select modules.name from course_modules inner join modules where course_modules.moduleID=modules.ID group by modules.name;
+
+This one is valid too, but does not group by the records and has multiple entries in the column. Think on this 
+
+select course_modules.moduleID, modules.name from course_modules inner join modules where course_modules.moduleID=modules.ID;
+
 
