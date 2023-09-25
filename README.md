@@ -32,8 +32,9 @@ Assignment 009 (Joins)
 Display studentID who have more than 2 phone numbers.
 select studentID, count(studentID) from student_qualifications group by studentID;
 
-Leetcode SQL50 
-Average selling price (Aggregate functions) 
+# Leetcode SQL50 
+
+## Average selling price (Aggregate functions) 
 Looking at the result table we write the basic select statement
 SELECT product_id, ____ as average_price FROM ___
 
@@ -68,10 +69,13 @@ ON p.product_id = u.product_id AND u.purchase_date BETWEEN p.Start_date and p.en
 GROUP BY p.product_id
 ------------------------------------------------
 
-Project Employees I : Ask Saleel sir about this question.
+## Project Employees I : Ask Saleel sir about this question.
 
 My solution : 
 select p.project_id , round(sum(u.experience_years)/count(project_id) ),2) from Project p inner join Employee e  on p.employee_id=e.employee_id group by project_id;
 Incomplete. Needs some brainstroming, almost there
 
+After a little brainstroming and a hint I got the solution : 
+
+select p.project_id , round(avg(e.experience_years ),2) as average_years from Project p inner join Employee e  on p.employee_id=e.employee_id group by project_id;
 
