@@ -67,3 +67,11 @@ FROM Prices p LEFT JOIN UnitsSold u
 ON p.product_id = u.product_id AND u.purchase_date BETWEEN p.Start_date and p.end_date
 GROUP BY p.product_id
 ------------------------------------------------
+
+Project Employees I : Ask Saleel sir about this question.
+
+My solution : 
+select p.project_id , round(sum(u.experience_years)/count(project_id) ),2) from Project p inner join Employee e  on p.employee_id=e.employee_id group by project_id;
+Incomplete. Needs some brainstroming, almost there
+
+
